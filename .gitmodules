@@ -1,3 +1,33 @@
 [submodule "json-joust"]
 	path = json-joust
 	url = https://github.com/apj-ctf/json-joust
+[submodule "trailblazer"]
+	path = trailblazer
+	url = https://github.com/apj-ctf/trailblazer
+[submodule "execute-me-not"]
+	path = execute-me-not
+	url = https://github.com/apj-ctf/execute-me-not
+[submodule "invisible-ink"]
+	path = invisible-ink
+	url = https://github.com/apj-ctf/invisible-ink
+[submodule "file-uploader"]
+	path = file-uploader
+	url = https://github.com/apj-ctf/file-uploader
+[submodule "file-explorer"]
+	path = file-explorer
+	url = https://github.com/apj-ctf/file-explorer
+[submodule "water-leak"]
+	path = water-leak
+	url = https://github.com/apj-ctf/water-leak
+[submodule "data_breach"]
+	path = data_breach
+	url = https://github.com/apj-ctf/data_breach
+[submodule "blackstump"]
+	path = blackstump
+	url = https://github.com/apj-ctf/blackstump
+[submodule "top-lang"]
+	path = top-lang
+	url = https://github.com/apj-ctf/top-lang
+[submodule "sauerkraut"]
+	path = sauerkraut
+	url = https://github.com/apj-ctf/sauerkraut
