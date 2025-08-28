@@ -10,18 +10,26 @@ You can clone this entire repository to your IDE (such as GitHub Codespaces or V
 git clone <repo-url>
 ```
 
+## Codespaces & Dev Container Environment
+
+This repo includes a preconfigured `.devcontainer` setup for GitHub Codespaces and VS Code Dev Containers. The environment provides:
+
+- **Java (OpenJDK 21)** with Maven
+- **Node.js (LTS)**
+- **Python 3**
+- **Docker-in-Docker**
+- **GitHub CLI**
+- **Postman** (for API testing)
+- **Snyk CLI** and Snyk VS Code extension
+- **VS Code extensions** for Snyk, REST Client, Python, and Docker
+- Common ports (27017, 8080, 8000, 5000) are forwarded for web apps and databases
+
+### Authentication
+Snyk is preconfigured to use Token authentication for scanning vulnerabilities.
+
 ## Using Snyk to Find Vulnerabilities
 
 Once cloned, use the Snyk plugin in your IDE to scan all the folders and quickly identify vulnerabilities across all challenges.
-
-- **VS Code**: Install the Snyk extension and run a scan.
-- **GitHub Codespaces**: Go to the "Code" section in GitHub and create a new Codespaces instance. The environment is preconfigured with:
-  - Snyk plugin
-  - Terminal for running curl commands
-  - Postman extension for API endpoint testing
-  - Other useful tools for CTF
-
-Everything you need to find the flags in the challenges is ready to go!
 
 ## Structure
 
@@ -34,6 +42,16 @@ Everything you need to find the flags in the challenges is ready to go!
 2. Open in Codespaces or VS Code.
 3. Use Snyk to scan for vulnerabilities.
 4. Use the terminal and Postman extension to interact with the challenges and find flags.
+
+## Codespaces / Snyk Setup Instructions
+
+1. Under Snyk -> 'General Settings' you should see a field under 'API Token' - create your API key and copy it:
+
+   ![Snyk API Token](api_token.png)
+
+2. If your Codespace is now ready, open the Command Palette (Cmd + Shift + P on Mac; Ctrl + Shift + P on Windows) and type Snyk:
+
+   ![Snyk Command Palette](set_token.png)
 
 ## Note
 
