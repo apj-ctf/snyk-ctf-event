@@ -10,7 +10,6 @@
     },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/postman:1": {},
     "ghcr.io/devcontainers/features/snyk:1": {},
     "ghcr.io/devcontainers/features/java:1": {
       "version": "none",
@@ -25,9 +24,21 @@
         "snyk-security.snyk-vulnerability-scanner",
         "humao.rest-client",
         "ms-python.python",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "Postman.postman"
       ],
       "settings": {
+        "workbench.colorTheme": "Default Dark+",
+        "workbench.startupEditor": "none",
+        "security.workspace.trust.enabled": false,
+        "snyk.trustedFolders": [
+          "/workspaces/snyk-ctf-event"
+        ],
+        "snyk.features.codeQuality": false,
+        "snyk.advanced.automaticDependencyManagement": true,
+        "snyk.scanningMode": "auto",
+        "snyk.advanced.autoScanOpenSourceSecurity": true,
+        "snyk.yesWelcomeNotification": false,
         "snyk.advanced.authenticationMethod": "Token authentication"
       }
     }
