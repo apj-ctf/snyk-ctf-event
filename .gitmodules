@@ -1,0 +1,3 @@
+[submodule "json-joust"]
+	path = json-joust
+	url = https://github.com/apj-ctf/json-joust
