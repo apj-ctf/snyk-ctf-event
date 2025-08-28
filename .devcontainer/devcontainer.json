@@ -34,7 +34,7 @@
         "snyk.scanningMode": "auto",
         "snyk.advanced.autoScanOpenSourceSecurity": true,
         "snyk.yesWelcomeNotification": false,
-        "snyk.advanced.authenticationMethod": "Token authentication"
+        "snyk.advanced.authenticationMethod": "API Token (Legacy)"
       }
     }
   },
