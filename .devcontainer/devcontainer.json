@@ -1,6 +1,6 @@
 {
   "name": "Snyk CTF Codespaces Environment",
-  "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"
@@ -21,10 +21,7 @@
     "vscode": {
       "extensions": [
         "snyk-security.snyk-vulnerability-scanner",
-        "humao.rest-client",
-        "ms-python.python",
-        "ms-azuretools.vscode-docker",
-        "Postman.postman"
+        "postman.postman-for-vscode"
       ],
       "settings": {
         "workbench.colorTheme": "Default Dark+",
@@ -33,7 +30,6 @@
         "snyk.trustedFolders": [
           "/workspaces/snyk-ctf-event"
         ],
-        "snyk.features.codeQuality": false,
         "snyk.advanced.automaticDependencyManagement": true,
         "snyk.scanningMode": "auto",
         "snyk.advanced.autoScanOpenSourceSecurity": true,
@@ -42,6 +38,6 @@
       }
     }
   },
-//  "forwardPorts": [27017, 8080, 8000, 5000],
+  "postCreateCommand": "git submodule update --init --recursive",
   "remoteUser": "vscode"
 }
