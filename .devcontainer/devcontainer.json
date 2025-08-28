@@ -1,5 +1,6 @@
 {
-  "name": "Snyk CTF Codespaces Environment",
+  "name": "My Node.js Project",
+  "image": "mcr.microsoft.com/devcontainers/universal",
   "customizations": {
     "vscode": {
       "extensions": [
